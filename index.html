@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Code Quiz</title>
 </head>
 <body>
@@ -13,23 +13,22 @@
         <span id="timer">Time: <span id="time-display">0</span></span>
     </header>
 
-    <!-- Starting Page -->
     <main>
-        <section id="starting-page" class="page">
+        <!-- Starting Page -->
+        <section id="starting-page" class="page-visible">
             <h1>Coding Quiz Challenge</h1>
             <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
             <button id="start-quiz-btn">Start Quiz</button>
         </section>
 
         <!-- Questions / Quiz Page -->
-
         <section id="question-page" class="page-hidden">
             <h2 id="question-display"></h2>
             <div id="answer-list"></div>
 
             <hr>
 
-            <div id="feedback">Correct!</div>
+            <div id="answer-feedback">Correct!</div>
         </section>
 
         <!-- Name Input Page -->
@@ -55,6 +54,7 @@
         </section>
     </main>
 
-    <script src="./assets/js/script.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>

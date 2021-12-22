@@ -46,7 +46,7 @@ header a{
 button{
     background-color:var(--main-blue);
     color: white;
-    border-radius: 25%;
+    border-radius: 5px;
     opacity: 50%;
     padding: 0.5rem;
 }
